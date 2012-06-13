@@ -374,7 +374,10 @@ small, .fs-milli { font-size:12px; font-size:0.75rem; /* 12px */ line-height:2; 
 /* =============================================================================
    1.a Containers & Columns
    ========================================================================== */
-/*.wrap { max-width: 960px;}*/
+.wrap { 
+  padding: 0 1em;
+  margin: 0 auto;
+}
    
 /* =============================================================================
    1.b Header
@@ -402,7 +405,40 @@ small, .fs-milli { font-size:12px; font-size:0.75rem; /* 12px */ line-height:2; 
 /* =============================================================================
    1.d Content
    ========================================================================== */
+.display-width {
+  bottom: 2em;
+  background: #2D2D2D;
+  border-radius: .25em;
+  color: #FFF;
+  margin: 0 auto;
+  opacity     : 0.9;
+  -moz-opacity: 0.9;
+        filter:alpha(opacity=90);
+  padding: 0 .5em;
+  position: absolute;
+  right: 3em;
+  text-align: center;
+  z-index: 10;
+}
 
+.display-width:before,
+.display-width:after {
+  content: "";
+  position: absolute;
+}
+
+.display-width:before {
+  background-color: #FFF;
+  border-radius: .25em;
+  bottom: -2em;
+  color: #000;
+  font-size: .75em;
+  left: -50%;
+  padding: 0 .5em;
+  right: -50%;
+  white-space: nowrap;
+  z-index: -100;
+}
 
 /* -----------------------------------------------------------------------------
    1.d.i General Typography
@@ -596,10 +632,10 @@ p.error, span.error { color: #CC3333;}
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden;}
 
-/* Contain floats: h5bp.com/q */ 
-.group:before, .group:after { content: ""; display: table; height:0;}
-.group:after { clear: both;}
-.group { *zoom: 1;}
+/* Clearfix for containing floats: h5bp.com/q */ 
+.cf:before, .cf:after { content: ""; display: table; height:0;}
+.cf:after { clear: both;}
+.cf { *zoom: 1;}
 
 /* 
  * media object - http://mopo.ws/GJYch3 
