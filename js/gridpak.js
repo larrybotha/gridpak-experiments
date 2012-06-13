@@ -46,36 +46,36 @@ var gridpak = {
                 
                 {
                     min_width: 0,
-                    col_num: 3,
+                    col_num: 2,
                     gutter_type: 'px',
                     gutter_width: 16,
                     padding_type: 'px',
                     padding_width: 0,
-                    upper: 319
+                    upper: 479
                 },
                 
                 {
-                    min_width: 320,
+                    min_width: 480,
                     col_num: 6,
                     gutter_type: 'px',
                     gutter_width: 16,
                     padding_type: 'px',
                     padding_width: 0,
-                    upper: 679
+                    upper: 959
                 },
                 
                 {
-                    min_width: 680,
+                    min_width: 960,
                     col_num: 12,
                     gutter_type: 'px',
                     gutter_width: 16,
                     padding_type: 'px',
                     padding_width: 0,
-                    upper: 1139
+                    upper: 1439
                 },
                 
                 {
-                    min_width: 1140,
+                    min_width: 1440,
                     col_num: 12,
                     gutter_type: 'px',
                     gutter_width: 16,
@@ -99,6 +99,7 @@ var gridpak = {
                 'position:absolute; ' +
                 'top:0; ' +
                 'left:0; ' +
+                'padding:0 1rem' +
             '} ' +
             '#gridpak .gridpak_grid { ' +
                 'height:100%; ' +
