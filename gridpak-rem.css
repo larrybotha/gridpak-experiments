@@ -4,9 +4,13 @@
  * Generator - http: //gridpak.com/
  * Created by @erskinedesign
  */
- 
- 
 
+/* rows hold columns - should be used with .cf */
+.row { margin-left: -16px;}
+
+.ie8 .row,
+.ie7 .row { margin-left: 0;}
+ 
 /* Reusable column setup */
 .col {
   border: 0 solid hsla(0,0%,0%,0);
@@ -24,15 +28,12 @@
           background-clip: padding-box !important;
 }
 
-/* IE8 doesn't separate columns well without padding */
+/* 
+ * IE8 doesn't separate columns well without padding.
+ * These lines can be removed if using padding in .col
+ */
 .ie8 .col { padding: 0 16px;}
 .ie7 .col { padding: 0 2%;}
-
-/* should be used with .cf */
-.row { margin-left: -16px;}
-
-.ie8 .row,
-.ie7 .row { margin-left: 0;}
 
 
 /* 1. 3 Column Grid 0px - 319px 
