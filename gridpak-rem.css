@@ -49,7 +49,7 @@ Span 2:   100%
 /*
  * At base font-size of 16px
  */
- @media screen and (min-width: 0) and (max-width: 479px) {
+ @media screen and (min-width: 0) {
 
   .display-width:before { content: "0 \27AA 479px";}
   
@@ -86,7 +86,7 @@ Span 6:   100%
  * 959px = 59.9375em
  */
 
-@media screen and (min-width: 30em) and (max-width: 959px) {
+@media screen and (min-width: 30em) {
   
   .display-width:before { content: "480 \27AA 959px";} 
   
@@ -136,7 +136,7 @@ Span 12:   100%
  * 960px = 60em
  * 1439px = 89.1875em
  */
-@media screen and (min-width: 60em) and (max-width: 1439px) {
+@media screen and (min-width: 60em) {
   
   .display-width:before { content: "960 \27AA 1439px";}
   
