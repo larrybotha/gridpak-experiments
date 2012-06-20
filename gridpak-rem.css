@@ -6,7 +6,15 @@
  */
 
 /* rows hold columns - should be used with .cf */
-.row { margin-left: -16px;}
+.row { 
+  display: block;
+  padding: 0;
+  margin-left: -16px;
+  text-align: left;
+  letter-spacing: -0.31em; /* '5' / 16 = .31 */
+  word-spacing: -0.43em; /* '7' / 16 = .43 */
+  text-rendering: optimizespeed;
+}
 
 .ie8 .row,
 .ie7 .row { margin-left: 0;}
@@ -16,7 +24,7 @@
   border: 0 solid hsla(0,0%,0%,0);
   border-left-width: 16px;
   border-left-width: 1rem;
-  float: left;
+  display: inline-block;
   min-height: 100px;
   background: hsla(0,0%,0%,.1);
   margin-bottom: 16px;
@@ -30,6 +38,12 @@
   -webkit-background-clip: padding-box !important;
      -moz-background-clip: padding-box !important;
           background-clip: padding-box !important;
+
+  vertical-align: top;
+  text-align: left;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-rendering: auto;
 }
 
 /* 
