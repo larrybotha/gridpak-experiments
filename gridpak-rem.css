@@ -22,7 +22,7 @@
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding: 0;
-  position:  relative;
+  position: relative;
   /* already declared at base styles - must be uncommented if not declared */
   /*-webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -151,7 +151,7 @@ Span 12:   100%
   .span_11_gamma { width: 91.667%;}
   .span_12_gamma {
     margin-left: 0;
-    width: 95%;
+    width: 100%;
   }
 
   /*
